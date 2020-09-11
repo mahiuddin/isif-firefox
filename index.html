@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" style="max-width: 600px; min-height: 600px;">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+      <title>ISIF - WHOIS-RDAP</title>
+      <link rel="icon" href="favicon.ico" type="image/ico">
+      <link rel="icon" href="img/favicon-16x16.png" type="image/png">
+      
+      <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <script src="js/jquery-3.5.1.min.js"></script>
+      <script src="js/psl.min.js"></script>
+      
+</head>
+<body>
+     
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="img/isif-logo.png" width="120" alt="ISIF-Asia">
+            </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">ISIF Asia - Home </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            </ul>
+            <!-- <form class="form-inline">
+            <input class="form-control mr-sm-2" id="txtIPHeader" type="search" placeholder="Search ip/domain/asn" aria-label="Search">
+            <button class="btn btn-outline-danger my-2 my-sm-0" id="btnSubmitHeader" type="submit">Search</button>
+            </form> -->
+         </div> 
+    </nav>
+     
+    <div class="container main-body bg-light pt-10 border-top mb-50 border-danger">
+        <div class="row">
+            <div class="col">
+                <form id="form" data-parsley-validate="true">
+                 <div class="card bg-light mt-2 mb-3">
+                    <div class="card-header bg-info text-white">ISIF Asia - Whois/RDAP search</div>
+                    <div class="row card-body">
+                        <div class="col-4 pr-0">
+                          <select class="form-control" id="ddOption">
+                            <option value="select">Select</option>
+                            <option value="asn">ASN</option>
+                            <option value="domain">Domain</option>
+                            <option value="ipv4">IPv4</option>
+                            <option value="ipv6">IPv6</option>
+                            <option value="ns">Name Server</option>
+                          </select>   
+                        </div> 
+                        <div class="col-8"><input type="text" class="form-control" id="txtIP" aria-describedby="emailHelp" placeholder="ASN/Domain/IP/NS" required>
+                        </div>           
+                    </div>
+                    <div class="row mx-auto">
+                        <div class="col mt-0 mb-3">
+                            <button type="button" id="btnSubmit" class="btn btn-outline-danger">Search</button>
+                        </div>           
+                    </div>
+                </div>
+              </form>
+            </div>           
+        </div>
+        
+        <!-- <div class="d-flex justify-content-center">
+            <div class="card bg-light mt-2 mb-3">
+                <div class="card-header text-red">ISIF Asia - Whois/RDAP search</div>
+                <div class="card-body">
+                <input type="text" class="form-control" size="50" id="txtIP" aria-describedby="emailHelp" placeholder="Enter the IP address or Domain name" required>               
+                <button type="button" id="btnSubmit" class="btn btn-outline-danger mt-2">Search</button>
+                </div>
+            </div>
+        </div> -->
+        <div id="result" class="scrollbar square scrollbar-lady-lips">
+
+        </div>    
+    </div>
+    <div class="container-fluid bg-dark mt-50 text-white p-2 fixed-bottom">
+        <div class="container" style="text-align: center;">
+         &copy ISIF 2020.
+        </div>
+    </div>  
+    <script src="ui.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "ISIF Whois-RDAP by UM",
+    "version": "1.0.2",
+    "description": "Get the domain from the address bar. Change the icon if the domain is new.",
+    "author": "ISIF-UM",
+    "icons":{
+        "128": "isif-128.png"
+    },
+    "browser_action": {
+      "default_icon": "isif-128.png",
+      "default_title":"ISIF Whois-RDAP Home",
+      "default_popup": "index.html"
+    }
+}
